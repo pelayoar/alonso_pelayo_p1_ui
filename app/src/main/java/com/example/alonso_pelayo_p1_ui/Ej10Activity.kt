@@ -33,11 +33,12 @@ class Ej10Activity : AppCompatActivity() {
             var usuario : String = user.text.toString()
             var pass : String = password.text.toString()
 
-            if (password.text.length < 8){
+            if(password.text.toString() == "" || password.text.toString() == ""){
+                Toast.makeText(this, "Los campos no pueden estar vacíos", Toast.LENGTH_LONG).show()
+            }else if (password.text.length < 7) {
                 Toast.makeText(this, "La contraseña debe tener al menos 8 caracteres", Toast.LENGTH_LONG).show()
-            }else {
-
-                if (usuario.equals(trueUser) && pass.equals(truePass)) {
+            }else{
+                if (usuario == trueUser && pass == truePass) {
                     Toast.makeText(this, "CONTRASEÑA CORRECTA", Toast.LENGTH_SHORT).show()
                 } else {
                     Toast.makeText(this, "ERROR, PRUEBE OTRA VEZ", Toast.LENGTH_SHORT).show()
