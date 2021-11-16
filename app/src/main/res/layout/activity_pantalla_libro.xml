@@ -88,6 +88,7 @@
                     android:layout_gravity="center"
                     />
                 <RadioGroup
+                    android:id="@+id/radioGroupTema"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
@@ -130,14 +131,16 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            >
+            android:layout_marginTop="20dp">
+
             <CheckBox
+                android:id="@+id/checkIngles"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Inglés"
                 android:layout_marginRight="20dp"/>
             <CheckBox
+                android:id="@+id/checkFrances"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Francés"/>
@@ -155,6 +158,7 @@
         android:layout_marginTop="20dp">
 
         <Button
+            android:id="@+id/buttonAceptar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Aceptar"
